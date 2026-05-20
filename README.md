@@ -1,5 +1,7 @@
 # Group Ironman Tracker
 
+![Group Ironman Tracker preview](docs/group-ironman-tracker-preview.png)
+
 Group Ironman Tracker is a RuneLite plugin for syncing Group Ironman activity between players in the same group.
 
 One of the only RuneLite plugins to utilise synced external state so group members can share activity across different machines and sessions.
@@ -32,7 +34,7 @@ Patreon support link coming soon.
 6. Click `C` to view the current group auth code for sharing.
 7. Click `M` to view current group members.
 8. Click `-` to leave the current group.
-9. Edit drop thresholds and boss KC session trigger amounts in the configuration
+9. Edit event toggles and tracking thresholds in the configuration.
 
 The panel will automatically show recent shared activity once you are in a group.
 
@@ -44,7 +46,7 @@ The panel will automatically show recent shared activity once you are in a group
 - Spring Boot backend
 - PostgreSQL through Amazon Relational Database Services (RDS)
 - AWS Elastic Beanstalk
-- 
+
 ## External Sync
 
 This plugin uses an external backend to persist and sync group activity between players in the same group.
@@ -53,6 +55,14 @@ That allows:
 - multiple accounts to join the same group
 - shared recent activity across different machines
 - persistent group history between sessions
+
+## Data & Privacy
+
+Group Ironman Tracker sends only the data needed to create groups, authenticate group members, and sync tracked activity. This includes in-game player names, group auth codes, session tokens, timestamps, and tracked event details such as levels, drops, quests, diaries, combat tasks, collection log unlocks, and boss kill counts.
+
+The plugin does not intentionally collect or submit player IP addresses in its event payloads. Like any service hosted behind AWS or a web server, connection metadata such as source IP addresses may appear in standard infrastructure or access logs depending on backend logging configuration.
+
+Group data is stored in AWS-backed services and is scoped to the group auth/session flow used by the plugin.
 
 ## Notes
 
