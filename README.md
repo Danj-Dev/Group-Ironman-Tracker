@@ -22,7 +22,7 @@ One of the only RuneLite plugins to utilise synced external state so group membe
 
 Unfortunately, Amazon Web Servers and RDS databases aren't free. I'm personally paying for it for the love of the game! 
 Any donations will go directly towards helping keep this plugin afloat. 
-Patreon support link coming soon.
+https://patreon.com/Danj_Dev?utm_medium=unknown&utm_source=join_link&utm_campaign=creatorshare_creator&utm_content=copyLink
 
 ## How To Use
 
